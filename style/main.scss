@@ -1,0 +1,41 @@
+.grabr_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  transition: all 300ms ease-in-out;
+}
+
+.grabr_content {
+  .grabr_datalist {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0 15px;
+    border-top: none;
+    max-height: 300px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 100;
+    transition: all 100ms ease-in-out;
+    & > li {
+      list-style: none;
+      border-top: 1px solid #eee;
+      cursor: pointer;
+      transition: all 150ms ease-in-out;
+      background: #fff;
+      padding: 5px;
+      & > div img {
+        margin-right: 20px;
+      }
+      &:hover {
+        background: #f3f3f3;
+      }
+    }
+  }
+}

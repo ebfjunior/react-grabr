@@ -1,0 +1,48 @@
+{
+  "name": "react-grabr",
+  "version": "0.1.9",
+  "description": "An autocomplete component for React",
+  "main": "src/index.js",
+  "scripts": {
+    "build:dev":
+      "cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "build:production":
+      "cross-env NODE_ENV=production webpack -p --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebfjunior/react-grabr.git"
+  },
+  "keywords": ["react", "autocomplete"],
+  "author": "Edson Júnior <ejunior.batista@gmail.com> (http://edsonjunior.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebfjunior/react-grabr/issues"
+  },
+  "homepage": "https://github.com/ebfjunior/react-grabr#readme",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "compression-webpack-plugin": "^1.0.0",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.6",
+    "dedupe-plugin": "^1.0.0",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "jsdom": "^8.1.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "babel-preset-stage-1": "^6.1.18",
+    "lodash": "^3.10.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-redux": "4.3.0",
+    "react-router": "^2.0.1",
+    "redux": "^3.0.4"
+  }
+}
